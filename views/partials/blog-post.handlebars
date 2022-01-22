@@ -1,0 +1,15 @@
+
+<div class="card">
+  <div class="card-header">
+    <h5 >{{title}}</h5>
+    {{#if canDelete}}
+    <btn class="btn btn-secondary editBtn" data-item={{id}}>Edit</btn>
+    <div class="deleteBtn" data-item={{id}}>X</div>
+  {{/if}}
+  </div>
+  
+  <div class="card-body">
+    <h5 class="card-title">Author:{{user.name}} || Created: {{timeConvert createdAt}}</h5>
+    <p class="card-text">{{content}}</p>
+  </div>
+</div>
